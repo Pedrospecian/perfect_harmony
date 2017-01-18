@@ -74,22 +74,62 @@ get_header(); ?>
                             </p>
                         </div>
                     </div>
-                    <div class="slider-development">
-                        <div class="slide-development-single" slave="1" masterslave-group="dev">
-                            <div class="content-text">
-                                <h3>Fase 1 - Criação e Design</h3>
-                                <p>
-                                    Essa fase envolveu toda a concepção artística dos elementos do jogo: criação de personagens, habilidades, cenários e enredo do jogo foram feitos nessa fase.
-                                </p>
-                                <p>
-                                    Para os personagens, foi aqui que foram definidas as personalidades, aparência (roupas, cabelo etc.) e características especiais.
-                                </p>
+                    <?php
+                        if( have_rows('fase') ){
+                            $counter=0;
+                            $foo=array();?>
+                            <div class="slider-development">
+                            <?php while ( have_rows('fase') ){
+                                $counter++;
+                                the_row();
+                                $foo[$counter]=get_sub_field('titulo');
+                                 ?>
+                                <div class="slide-development-single" slave="<?php echo $counter; ?>" masterslave-group="dev">
+                                    <div class="content-text">
+                                        <h3>Fase <?php echo $counter; ?> - <?php the_sub_field('titulo'); ?></h3>
+                                        <p>
+                                            <?php the_sub_field('corpo_de_texto'); ?>
+                                        </p>
+                                    </div>
+                                    <div class="content-figures">
+                                        <img class="sliderdev-figure" src="<?php echo get_sub_field('figura'); ?>" alt="ARA">
+                                    </div>
+                                </div>
+                            <?php } ?>
                             </div>
-                            <div class="content-figures">
-                                ARA
+
+                            <div class="container">
+                                <div class="slider-dev-master">
+                                    <div class="slider-dev-master-content">
+                                        <?php
+                                            $tam=100/count($foo);
+                                            ?>
+
+                                                <input name="gambiarra" type="hidden" value="<?php echo $tam; ?>">
+                                            <?php
+                                            for($i=0;$i<count($foo);$i++) {
+                                                $current="";
+                                                if($i+1==2) $current="current";
+                                            ?>
+                                            <div class="slide-development-single <?php echo $current; ?>" master="<?php echo $i+1; ?>" masterslave-group="dev"
+                                                <?php if($i<count($foo)-1){ ?> style="width:<?php echo $tam; ?>%;" <?php } ?> >
+                                                <div class="number-wrapper">
+                                                    <span class="number">
+                                                        <span class="no"><?php echo $i+1; ?></span>
+                                                        <span class="text"><?php echo $foo[$i+1]; ?></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    </div>
+                                    <span class="after"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="slide-development-single" slave="2" masterslave-group="dev">
+
+                    <?php } ?>
+
+
+                        <!--<div class="slide-development-single" slave="2" masterslave-group="dev">
                             <div class="content-text">
                                 <h3>Fase 2 - Database</h3>
                                 <p>
@@ -160,9 +200,9 @@ get_header(); ?>
                             <div class="content-figures">
                                 ARA
                             </div>
-                        </div>
-                    </div>
-                    <div class="container">
+                        </div>-->
+
+                    <!--<div class="container">
                         <div class="slider-dev-master">
                             <div class="slider-dev-master-content">
                                 <div class="slide-development-single" master="1" masterslave-group="dev"><div class="number-wrapper"><span class="number"><span class="no">1</span><span class="text">Criação e Design</span></span></div></div>
@@ -175,7 +215,7 @@ get_header(); ?>
                             </div>
                             <span class="after"></span>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </section>
 

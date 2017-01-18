@@ -16,15 +16,17 @@ $(document).ready(function(){
     });
 
     var current=$('.slider-dev-master .slide-development-single.current').attr('master');
-    var currentArrow=(current-1)*14.95;
+    var currentArrow=(current-1)*($('input[name="gambiarra"]').val()*0.9925);
+    //var currentArrow=($('.current').offset().left)-140;
 
-    $('.slider-dev-master .after').css({'left': currentArrow+"%", 'opacity': '1'});
+    $('.slider-dev-master .after').css({'left': currentArrow+'%', 'opacity': '1'});
     animation_FadeIn('.slider-development .slide-development-single[slave="'+current+'"]', 0.4);
 
     $('[masterslave-group][master]').on('click', function(){
         //alert($(this).attr('masterslave-group')+' - '+$(this).attr('master'));
-        currentArrow=($(this).attr('master')-1)*14.95;
-        $('.slider-dev-master .after').css('left', currentArrow+"%");
+        currentArrow=($(this).attr('master')-1)*($('input[name="gambiarra"]').val()*0.9925);
+        //currentArrow=($(this).offset().left)-140;
+        $('.slider-dev-master .after').css('left', currentArrow+'%');
         animation_FadeOut('.slider-development .slide-development-single[slave]:not([slave="'+$(this).attr('master')+'"])', 0.4);
         animation_FadeIn('.slider-development .slide-development-single[slave="'+$(this).attr('master')+'"]', 0.4);
     });

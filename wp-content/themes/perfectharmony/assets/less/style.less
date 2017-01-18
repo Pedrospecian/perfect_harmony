@@ -221,7 +221,7 @@ header {
 		width: 80%;
 	}
 
-	&:not(.section-home-1):nth-child(even) {
+	&:not(.section-home-1):nth-of-type(odd) {
 		.content-text {
 			left: 5%;
 		}
@@ -231,7 +231,7 @@ header {
 		}
 	}
 
-	&:not(.section-home-1):nth-child(odd) {
+	&:not(.section-home-1):nth-of-type(even) {
 		.content-text {
 			right: 5%;
 		}
@@ -272,6 +272,18 @@ header {
 		}
 	}
 
+	&.section-home-5 {
+		.bg {
+			width: 100%;
+			height: 200%;
+			left: 0;
+			position: absolute;
+			top: 0%;
+			background-image: url(../images/generic_bg.jpg);
+			background-size: cover;
+		}
+	}
+
 	&.section-home-6 {
 
 		.bg {
@@ -296,7 +308,7 @@ header {
 			margin-bottom: 40px;
 
 			.slide-development-single {
-				width: 15%;
+				//width: 15%;
 				display: inline-block;
 				position: relative;
 				border-bottom: solid 1px #737f96;
@@ -444,18 +456,6 @@ header {
 			opacity: 0;
 			transition: 0.4s;
 			animation: arrow_dev 1.2s linear infinite;
-		}
-	}
-
-	&.section-home-5 {
-		.bg {
-			width: 100%;
-			height: 200%;
-			left: 0;
-			position: absolute;
-			top: 0%;
-			background-image: url(../images/generic_bg.jpg);
-			background-size: cover;
 		}
 	}
 }

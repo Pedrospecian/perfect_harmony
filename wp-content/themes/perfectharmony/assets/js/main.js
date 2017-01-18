@@ -88,13 +88,13 @@ $(document).ready(function(){
 
         // build scenes
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-5"})
-                        .setTween(".main-home .section-home-5 .bg", {y: "60%", ease: Linear.easeNone})
+                        .setTween(".main-home .section-home-5 .bg", {y: "-30%", ease: Linear.easeNone})
                         .addIndicators()
                         .addTo(controller1);
 
         // build scenes
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-6"})
-                        .setTween(".main-home .section-home-6 .bg", {y: "-30%", ease: Linear.easeNone})
+                        .setTween(".main-home .section-home-6 .bg", {y: "60%", ease: Linear.easeNone})
                         .addIndicators()
                         .addTo(controller2);
 

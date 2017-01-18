@@ -34,52 +34,36 @@ get_header(); ?>
 
             <div class="divisory"></div>
 
-            <section class="section section-home section-home-2">
-                <div class="content-text">
-                    <h2>Status do Jogo</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="content-figures">
-                    ARA
-                </div>
-            </section>
+            <?php
+                if( have_rows('topico') ){
+                    $counter=1;
+                    ?>
+                    <?php while ( have_rows('topico') ){
+                        $counter++;
+                        the_row();
+                    ?>
+                        <section class="section section-home section-home-<?php echo $counter; ?>">
+                            <div class="bg" style="background-image: url(<?php echo get_sub_field('bg'); ?>);"></div>
+                            <img class="fg" src="<?php echo get_sub_field('bg_frente'); ?>" alt="ARA">
+                            <?php if($counter==4){ ?> <div id="particles-js"></div> <?php } ?>
+                            <div class="content-text">
+                                <h2><?php the_sub_field('titulo'); ?></h2>
+                                <p>
+                                    <?php the_sub_field('corpo_de_texto'); ?>
+                                </p>
+                            </div>
+                            <div class="content-figures">
+                                <img class="content-figure-single" src="<?php echo get_sub_field('figura'); ?>" alt="ARA">
+                            </div>
+                        </section>
+                        <div class="divisory"></div>
+                    <?php } ?>
 
-            <div class="divisory"></div>
+            <?php }
 
-            <section class="section section-home section-home-3">
-                <div class="bg"></div>
-                <div class="content-text">
-                    <h2>Personagens</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="content-figures">
-                    ARA
-                </div>
-            </section>
+            ?>
 
-            <div class="divisory"></div>
-
-            <section class="section section-home section-home-4">
-                <div class="bg"></div>
-                <div id="particles-js"></div>
-                <div class="content-text">
-                    <h2>Enredo</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="content-figures">
-                    ARA
-                </div>
-            </section>
-
-            <div class="divisory"></div>
-
-            <section class="section section-home section-home-5">
+            <section class="section section-home section-home-6">
                 <div class="bg"></div>
                 <div class="content-foreground">
                     <div class="container">
@@ -126,7 +110,7 @@ get_header(); ?>
                             <div class="content-text">
                                 <h3>Fase 3 - Sprites e Trilha Sonora</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
                             </div>
                             <div class="content-figures">
@@ -137,7 +121,7 @@ get_header(); ?>
                             <div class="content-text">
                                 <h3>Fase 4 - Level Design</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
                             </div>
                             <div class="content-figures">
@@ -148,7 +132,7 @@ get_header(); ?>
                             <div class="content-text">
                                 <h3>Fase 5 - Códigos</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
                             </div>
                             <div class="content-figures">
@@ -159,7 +143,7 @@ get_header(); ?>
                             <div class="content-text">
                                 <h3>Fase 6 - Testes</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
                             </div>
                             <div class="content-figures">
@@ -170,7 +154,7 @@ get_header(); ?>
                             <div class="content-text">
                                 <h3>Fase 7 - Lançamento</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
                             </div>
                             <div class="content-figures">
@@ -192,21 +176,6 @@ get_header(); ?>
                             <span class="after"></span>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <div class="divisory"></div>
-
-            <section class="section section-home section-home-6">
-                <div class="bg"></div>
-                <div class="content-text">
-                    <h2>Screenshots</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="content-figures">
-                    ARA
                 </div>
             </section>
 

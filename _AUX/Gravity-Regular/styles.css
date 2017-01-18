@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Gravity-Regular';
+  src: url('Gravity-Regular.eot?#iefix') format('embedded-opentype'),  url('Gravity-Regular.otf')  format('opentype'),
+	     url('Gravity-Regular.woff') format('woff'), url('Gravity-Regular.ttf')  format('truetype'), url('Gravity-Regular.svg#Gravity-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

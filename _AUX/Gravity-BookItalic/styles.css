@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Gravity-BookItalic';
+  src: url('Gravity-BookItalic.eot?#iefix') format('embedded-opentype'),  url('Gravity-BookItalic.otf')  format('opentype'),
+	     url('Gravity-BookItalic.woff') format('woff'), url('Gravity-BookItalic.ttf')  format('truetype'), url('Gravity-BookItalic.svg#Gravity-BookItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

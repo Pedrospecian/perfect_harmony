@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Gravity-Bold';
+  src: url('Gravity-Bold.eot?#iefix') format('embedded-opentype'),  url('Gravity-Bold.otf')  format('opentype'),
+	     url('Gravity-Bold.woff') format('woff'), url('Gravity-Bold.ttf')  format('truetype'), url('Gravity-Bold.svg#Gravity-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

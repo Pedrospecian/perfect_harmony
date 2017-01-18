@@ -33,68 +33,41 @@ $(document).ready(function(){
 
     $('.slider-dev-master .slide-development-single.current').prevAll().addClass('previous');
 
-    /*var tween = TweenMax.staggerFromTo(".container", 2, {
-        backgroundPosition: "0 0"
-    }, {
-        backgroundPosition: "0 150px"
-    });
-    var scene = new ScrollMagic.Scene({
-        duration: 100
-    })
-    scene.setTween(tween);
-    scene.addTo(controller);
-    scene.addIndicators();*/
-    /*var controller = new ScrollMagic.Controller();
-
-    var scene = new ScrollMagic.Scene({
-        triggerElement: "#trigger1"
-    })
-    .setTween("#animate1", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
-    .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-    .addTo(controller);*/
-
     if($('.main-home').length ){
         var controller1 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
         var controller2 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "1270px"}});
         var controller3 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
-        // build scenes
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-1"})
                         .setTween(".main-home .section-home-1 .bg", {y: "70%", ease: Linear.easeNone})
                         .addIndicators()
                         .addTo(controller1);
 
-        // build scenes
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-1"})
                         .setTween(".main-home .section-home-1 #particles-js-1", {y: "-20%", ease: Linear.easeNone})
                         .addIndicators()
                         .addTo(controller1);
 
-        // build scenes
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-3"})
                         .setTween(".main-home .section-home-3 .bg", {y: "50%", ease: Linear.easeNone})
                         .addIndicators()
                         .addTo(controller3);
 
-        // build scenes
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-4"})
                         .setTween(".main-home .section-home-4 .bg", {x: "10%", ease: Linear.easeNone})
                         .addIndicators()
                         .addTo(controller1);
 
-        // build scenes
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-4"})
                         .setTween(".main-home .section-home-4 #particles-js", {x: "-20%", ease: Linear.easeNone})
                         .addIndicators()
                         .addTo(controller1);
 
-        // build scenes
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-5"})
                         .setTween(".main-home .section-home-5 .bg", {y: "-30%", ease: Linear.easeNone})
                         .addIndicators()
                         .addTo(controller1);
 
-        // build scenes
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-6"})
                         .setTween(".main-home .section-home-6 .bg", {y: "60%", ease: Linear.easeNone})
                         .addIndicators()
@@ -214,11 +187,6 @@ $(document).ready(function(){
             });
         var update;
         update = function() {
-            //stats.begin();
-            //stats.end();
-            /*if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-            }*/
             requestAnimationFrame(update);
         };
         requestAnimationFrame(update);;
@@ -333,22 +301,6 @@ $(document).ready(function(){
                 },
                 "retina_detect":true
             });
-        /*var count_particles, stats;
-        stats = new Stats;
-        stats.setMode(0);
-        stats.domElement.style.position = 'absolute';
-        stats.domElement.style.left = '0px';
-        stats.domElement.style.top = '0px';
-        document.body.appendChild(stats.domElement);
-        count_particles = document.querySelector('.js-count-particles');*/
-        /*update = function() {
-            stats.begin();
-            stats.end();
-            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-            }
-            requestAnimationFrame(update);
-        };*/
         requestAnimationFrame(update);;
     }
 });

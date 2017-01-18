@@ -95,6 +95,28 @@ Use it to make something cool, have fun, and share what you've learned with othe
     top: -72px;
   }
 }
+@-webkit-keyframes imagem_dev {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+@keyframes imagem_dev {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
 * {
   outline: none!important;
 }
@@ -267,6 +289,9 @@ header .header-menu li {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.section .content-figures .sliderdev-figure {
+  width: 100%;
+}
 .section .content-main {
   padding-top: 40px;
   width: 80%;
@@ -313,6 +338,13 @@ header .header-menu li {
   top: 0%;
   background-image: url(../images/generic_bg.jpg);
   background-size: cover;
+}
+.section.section-home-6 {
+  /*.content-figures {
+			.sliderdev-figure {
+				animation: imagem_dev 5s infinite;
+			}
+		}*/
 }
 .section.section-home-6 .bg {
   background-image: url(../images/generic_bg.jpg);
@@ -448,6 +480,9 @@ header .header-menu li {
           transform: translateX(-50%);
   min-width: 100px;
 }
+.section.section-home-6 .slider-dev-master-content {
+  text-align: center;
+}
 .section.section-home-6 .slider-dev-master .after {
   position: absolute;
   top: -72px;
@@ -456,7 +491,7 @@ header .header-menu li {
   width: 40px;
   height: 60px;
   display: block;
-  margin-left: -8px;
+  margin-left: -1px;
   left: 0;
   content: "";
   z-index: 2;

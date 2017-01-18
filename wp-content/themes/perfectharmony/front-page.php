@@ -102,12 +102,11 @@ get_header(); ?>
                                         <?php
                                             $tam=100/count($foo);
                                             ?>
-
                                                 <input name="gambiarra" type="hidden" value="<?php echo $tam; ?>">
                                             <?php
                                             for($i=0;$i<count($foo);$i++) {
                                                 $current="";
-                                                if($i+1==2) $current="current";
+                                                if($i+1==2) $current="current selecionado";
                                             ?>
                                             <div class="slide-development-single <?php echo $current; ?>" master="<?php echo $i+1; ?>" masterslave-group="dev"
                                                 <?php if($i<count($foo)-1){ ?> style="width:<?php echo $tam; ?>%;" <?php } ?> >

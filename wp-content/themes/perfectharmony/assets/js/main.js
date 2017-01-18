@@ -16,22 +16,43 @@ $(document).ready(function(){
     });
 
     var current=$('.slider-dev-master .slide-development-single.current').attr('master');
-    var currentArrow=(current-1)*($('input[name="gambiarra"]').val()*0.9925);
-    //var currentArrow=($('.current').offset().left)-140;
+    //var currentArrow=(current)*($('input[name="gambiarra"]').val()*0.9925);
+    var currentArrow=($('.current').offset().left)-window.innerWidth*($('input[name="gambiarra"]').val()/100);
 
-    $('.slider-dev-master .after').css({'left': currentArrow+'%', 'opacity': '1'});
+    $('.slider-dev-master .after').css({'left': currentArrow+'px', 'opacity': '1'});
     animation_FadeIn('.slider-development .slide-development-single[slave="'+current+'"]', 0.4);
 
     $('[masterslave-group][master]').on('click', function(){
+        $('[masterslave-group][master]').removeClass('selecionado');
+        $(this).addClass('selecionado');
         //alert($(this).attr('masterslave-group')+' - '+$(this).attr('master'));
-        currentArrow=($(this).attr('master')-1)*($('input[name="gambiarra"]').val()*0.9925);
-        //currentArrow=($(this).offset().left)-140;
-        $('.slider-dev-master .after').css('left', currentArrow+'%');
+        //currentArrow=($(this).attr('master'))*($('input[name="gambiarra"]').val()*0.9925);
+        currentArrow=($(this).offset().left)-window.innerWidth*($('input[name="gambiarra"]').val()/100);
+        $('.slider-dev-master .after').css('left', currentArrow+'px');
         animation_FadeOut('.slider-development .slide-development-single[slave]:not([slave="'+$(this).attr('master')+'"])', 0.4);
         animation_FadeIn('.slider-development .slide-development-single[slave="'+$(this).attr('master')+'"]', 0.4);
     });
 
+    $(window).resize(function(){
+        currentArrow=($('[masterslave-group][master].selecionado').offset().left)-window.innerWidth*($('input[name="gambiarra"]').val()/100);
+        $('.slider-dev-master .after').css('left', currentArrow+'px');
+    });
+
     $('.slider-dev-master .slide-development-single.current').prevAll().addClass('previous');
+
+    //if($('.slide-development-single').length) {
+        /*function animateImage() {
+           $('.slider-development .slide-development-single .content-figures .sliderdev-figure').css({"margin-top":"0px"});
+           TweenMax.to('.slider-development .slide-development-single .content-figures .sliderdev-figure',1,{
+               marginTop: '2000px',
+               onComplete: animateImage
+           });
+       }*/
+
+       /*var a=TweenMax.fromTo($(".slider-development .slide-development-single .content-figures .sliderdev-figure"), 2, {marginTop: 60}, {marginTop: 0});*/
+        TweenMax.fromTo($(".slider-development .slide-development-single .content-figures .sliderdev-figure"), 2, { marginTop: 0}, {ease: Sine.easeInOut, marginTop: 20, repeat: -1}).yoyo(true);
+        TweenMax.fromTo($(".slider-development .slide-development-single .content-text"), 3, { marginTop: 5}, {ease: Sine.easeInOut, marginTop: 0, repeat: -1}).yoyo(true);
+    //}
 
     if($('.main-home').length ){
         var controller1 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
@@ -214,7 +235,7 @@ $(document).ready(function(){
                             "nb_sides":5
                         },
                         "image":{
-                            "src":"img/github.svg",
+                            "src":"wp-content/themes/perfectharmony/assets/images/particle.png",
                             "width":100,
                             "height":100
                         }
@@ -266,7 +287,7 @@ $(document).ready(function(){
                     "events":{
                         "onhover":{
                             "enable":true,
-                            "mode":"repulse"
+                            "mode":"bubble"
                         },
                         "onclick":{
                             "enable":false,
@@ -281,15 +302,15 @@ $(document).ready(function(){
                             }
                         },
                         "bubble":{
-                            "distance":400,
-                            "size":4,
-                            "duration":0.3,
-                            "opacity":1,
-                            "speed":3
+                            "distance":200,
+                            "size":0,
+                            "duration":3.0,
+                            "opacity":0.4,
+                            "speed":1
                         },
                         "repulse":{
                             "distance":72,
-                            "duration":4
+                            "duration":8.0
                         },
                         "push":{
                             "particles_nb":4

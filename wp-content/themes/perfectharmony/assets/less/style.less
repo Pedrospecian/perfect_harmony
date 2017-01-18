@@ -27,6 +27,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
     100% {top: -72px;}
 }
 
+@keyframes imagem_dev {
+	0% {margin-top: 0px;}
+	50% {margin-top: 20px;}
+	100%{margin-top: 0px;}
+}
+
 * {
 	outline: none!important;
 }
@@ -214,6 +220,10 @@ header {
 		width: 40%;
 		top: 50%;
 		transform: translateY(-50%);
+
+		.sliderdev-figure {
+			width: 100%;
+		}
 	}
 
 	.content-main {
@@ -441,6 +451,10 @@ header {
 			}
 		}
 
+		.slider-dev-master-content {
+			text-align: center;
+		}
+
 		.slider-dev-master .after{
 			position: absolute;
 			top: -72px;
@@ -449,7 +463,7 @@ header {
 		    width: 40px;
 		    height: 60px;
 		    display: block;
-		    margin-left: -8px;
+		    margin-left: -1px;
 			left: 0;
 			content: "";
 			z-index: 2;
@@ -457,6 +471,12 @@ header {
 			transition: 0.4s;
 			animation: arrow_dev 1.2s linear infinite;
 		}
+
+		/*.content-figures {
+			.sliderdev-figure {
+				animation: imagem_dev 5s infinite;
+			}
+		}*/
 	}
 }
 

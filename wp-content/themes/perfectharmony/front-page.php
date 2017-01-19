@@ -52,9 +52,29 @@ get_header(); ?>
                                     <?php the_sub_field('corpo_de_texto'); ?>
                                 </p>
                             </div>
-                            <div class="content-figures">
-                                <img class="content-figure-single" src="<?php echo get_sub_field('figura'); ?>" alt="ARA">
-                            </div>
+                            <?php if($counter==3){ ?>
+                                <div class="content-figures content-figures-characters">
+                                    <div class="content-figures-characters-wrapper">
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/personagem.png" alt="" class="character character-6">
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/personagem.png" alt="" class="character character-5">
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/personagem.png" alt="" class="character character-4">
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/personagem.png" alt="" class="character character-3">
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/personagem.png" alt="" class="character character-2">
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/personagem.png" alt="" class="character character-1">
+                                    </div>
+                                </div>
+                            <?php }elseif($counter==4){ ?>
+                                <div class="content-figures content-figures-characters">
+                                    <div class="content-figures-characters-wrapper">
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/personagem.png" alt="" class="character character-7">
+                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/personagem.png" alt="" class="character character-8">
+                                    </div>
+                                </div>
+                            <?php }else{ ?>
+                                <div class="content-figures">
+                                    <img class="content-figure-single" src="<?php echo get_sub_field('figura'); ?>" alt="ARA">
+                                </div>
+                            <?php } ?>
                         </section>
                         <div class="divisory"></div>
                     <?php } ?>

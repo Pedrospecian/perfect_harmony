@@ -59,6 +59,8 @@ $(document).ready(function(){
         var controller2 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "1270px"}});
         var controller3 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
+        var controllerCharacters = new ScrollMagic.Controller();
+
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-1"})
                         .setTween(".main-home .section-home-1 .bg", {y: "70%", ease: Linear.easeNone})
                         .addIndicators()
@@ -93,6 +95,56 @@ $(document).ready(function(){
                         .setTween(".main-home .section-home-6 .bg", {y: "60%", ease: Linear.easeNone})
                         .addIndicators()
                         .addTo(controller2);
+
+        /*var scene = new ScrollMagic.Scene({triggerElement: ".main-home .section-home-3"})
+                        // trigger a velocity opaticy animation
+                        .setVelocity(".main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character", {opacity: 1, top: 0}, {duration: 400})
+                        .addIndicators() // add indicators (requires plugin)
+                        .addTo(controllerCharacters);*/
+        var tl = new TimelineMax()
+                    .to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-1', 0.2, {opacity:1, marginBottom:0, ease: Power0.easeNone})
+                    .to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-2', 0.2, {opacity:1, marginBottom:0, ease: Power0.easeNone})
+                    .to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-3', 0.2, {opacity:1, marginBottom:0, ease: Power0.easeNone})
+                    .to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-4', 0.2, {opacity:1, marginBottom:0, ease: Power0.easeNone})
+                    .to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-5', 0.2, {opacity:1, marginBottom:0, ease: Power0.easeNone})
+                    .to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-6', 0.2, {opacity:1, marginBottom:0, ease: Power0.easeNone});
+
+        /*var tl2 = new TimelineMax()
+                    .to('.main-home .section-home-3 .content-figures-characters', 2, {right:'4%'});*/
+
+        /*var tl2 = new TimelineMax().add([
+                    TweenMax.to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-1', 0, {className:'-=appear', delay: 0}),
+                    TweenMax.to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-2', 0, {className:'-=appear', delay: 0.15}),
+                    TweenMax.to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-3', 0, {className:'-=appear', delay: 0.3}),
+                    TweenMax.to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-4', 0, {className:'-=appear', delay: 0.45}),
+                    TweenMax.to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-5', 0, {className:'-=appear', delay: 0.6}),
+                    TweenMax.to('.main-home .section-home-3 .content-figures-characters .content-figures-characters-wrapper .character.character-6', 0, {className:'-=appear', delay: 0.75})
+                ]);*/
+                    //TweenLite.to(element, 0, {class:'+=newclass'});
+
+        var pin = new ScrollMagic.Scene({
+                triggerElement: '.main-home .section-home-3 .content-text'
+            }).setTween(tl).addIndicators().addTo(controllerCharacters);
+
+        /*var pin = new ScrollMagic.Scene({
+                triggerElement: '.main-home .section-home-3 .content-text'
+            }).setTween(tl2).addIndicators().addTo(controllerCharacters);*/
+
+        /*var pin2 = new ScrollMagic.Scene({
+                triggerElement: '.main-home .section-home-3, .main-home .section-home-4'
+            }).setTween(tl2).addIndicators().addTo(controllerCharacters);*/
+
+        /*var scene = new ScrollMagic.Scene({triggerElement: ".main-home .section-home-3 .content-text"})
+                    // trigger animation by adding a css class
+                    .setClassToggle(".character.character-1", "appear")
+                    .setClassToggle(".character.character-2", "appear")
+                    .setClassToggle(".character.character-3", "appear")
+                    .setClassToggle(".character.character-4", "appear")
+                    .setClassToggle(".character.character-5", "appear")
+                    .setClassToggle(".character.character-6", "appear")
+                    .addIndicators() // add indicators (requires plugin)
+                    .addTo(controllerCharacters);*/
+
 
     }
 

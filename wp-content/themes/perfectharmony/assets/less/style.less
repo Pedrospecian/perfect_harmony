@@ -190,6 +190,23 @@ header {
     display: none;
 }
 
+.plot {
+    .plot-divisory {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .scene-single {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: black;
+        color: white;
+    }
+}
+
 .section {
     background-color: #356;
     height: 100vh;
@@ -259,14 +276,14 @@ header {
 
     &.section-home-1 {
         .bg {
-            background-image: url(../images/home-bg-1.jpg);
+            background-image: url(../images/generic_bg.jpg);
             animation: homebg 8s linear infinite;
         }
     }
 
     &.section-home-2 {
         .bg {
-            background-image: url(../images/generic_bg.jpg);
+            background-image: url(../images/.jpg);
             background-size: cover;
             filter: blur(0px);
         }
@@ -628,7 +645,7 @@ footer {
                 }
 
                 .social-facebook::before {
-                    background-color: #4b71b3;
+                    background-color: #4973c3;
                 }
 
                 .social-twitter::before {

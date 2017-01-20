@@ -32,110 +32,167 @@ get_header(); ?>
             <article class="plot">
                 <section class="plot-divisory plot-1">
                     <div class="scene-single scene-1">
-                        <p>
-                            O universo se mantém de pé graças à harmonia entre os opostos.
-                        </p>
-                        <p>
-                            Ao criar tudo, o Criador estabeleceu quatro Balanças Primordiais, as quais mantêm o equilíbrio do universo:
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    O universo se mantém de pé graças à harmonia entre os opostos.
+                                </p>
+                                <p class="b">
+                                    Ao criar tudo, o Criador estabeleceu quatro Balanças Primordiais, as quais mantêm o equilíbrio do universo:
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="scene-single scene-2">
-                        <p>
-                            A Balança do Tempo e do Espaço.
-                        </p>
-                        <p>
-                            A Balança do Calor e do Frio.
-                        </p>
-                        <p>
-                            A Balança da Natureza e do Conhecimento.
-                        </p>
-                        <p>
-                            E por fim...
-                        </p>
-                        <p>
-                            A Balança da Vida e da Morte.
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    A Balança do Tempo e do Espaço.
+                                </p>
+                                <p class="b">
+                                    A Balança do Calor e do Frio.
+                                </p>
+                                <p class="c">
+                                    A Balança da Natureza e do Conhecimento.
+                                </p>
+                                <p class="d">
+                                    E por fim...
+                                </p>
+                                <p class="e">
+                                    A Balança da Vida e da Morte.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="scene-single scene-3">
-                        <p>
-                            Para guardar as Quatro Balanças, o Criador fez oito entidades para cuidar de cada prato de cada balança. Essas oito entidades são chamadas Guardiões.
-                        </p>
-                        <p>
-                            Os Guardiões da balança da vida e da morte, a balança do topo, são Agna e Eigengrau.
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    Para guardar as Quatro Balanças, o Criador fez oito entidades para cuidar de cada prato de cada balança. Essas oito entidades são chamadas Guardiões.
+                                </p>
+                                <p class="b">
+                                    Os Guardiões da balança da vida e da morte, a balança do topo, são Agna e Eigengrau.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="plot-divisory plot-2">
                     <div class="scene-single scene-1">
-                        <p>
-                            O trabalho de cada Guardião é zelar para que seu prato esteja sempre em equilíbrio em relação ao prato oposto. Logo, Agna é a responsável por manter a vida e Eigengrau é o responsável por assegurar que haverá um fim a cada vida feita por Agna.
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    O trabalho de cada Guardião é zelar para que seu prato esteja sempre em equilíbrio em relação ao prato oposto. Logo, Agna é a responsável por manter a vida e Eigengrau é o responsável por assegurar que haverá um fim a cada vida feita por Agna.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="scene-single scene-2">
-                        <p>
-                            Ambos os Guardiões sempre foram extremamente dedicados para com sua tarefa. No entanto...
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    Ambos os Guardiões sempre foram extremamente dedicados para com sua tarefa.
+                                </p>
+                                <p class="b">
+                                    No entanto...
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="plot-divisory plot-3">
                     <div class="scene-single scene-1">
-                        <p>
-                            Há 400 anos, uma bruxa poderosa tentou controlar o Guardião da Morte com um feitiço poderoso para que se tornasse mais poderosa que os próprios Guardiões.
-                        </p>
-                        <p>
-                            Porém, logo após lançar o feitiço contra o Guardião da Morte, os outros seis Guardiões foram convocados e selaram a alma dela.
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    Há 400 anos, uma bruxa poderosa tentou controlar o Guardião da Morte com um feitiço poderoso para que se tornasse mais poderosa que os próprios Guardiões.
+                                </p>
+                                <p class="b">
+                                    Porém, logo após lançar o feitiço contra o Guardião da Morte, os outros seis Guardiões foram convocados e selaram a alma dela.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="scene-single scene-2">
-                        <p>
-                            O Guardião da Morte ainda estava enfeitiçado e, graças ao feitiço, se tornou violento. Por isso, os Guardiões tiveram que selar ele e a Guardiã da Vida para garantir que Eigengrau fosse temporariamente pacificado e ao mesmo tempo o equilíbrio entre a vida e a morte fosse mantido.
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    O Guardião da Morte ainda estava enfeitiçado e, graças ao feitiço, se tornou violento. Por isso, os Guardiões tiveram que selar ele e a Guardiã da Vida para garantir que Eigengrau fosse temporariamente pacificado e ao mesmo tempo o equilíbrio entre a vida e a morte fosse mantido.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="plot-divisory plot-4">
                     <div class="scene-single scene-1">
-                        <p>
-                            1860. Ano em que se passa nossa história.
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    1860. Ano em que se passa nossa história.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="plot-divisory plot-5">
                     <div class="scene-single scene-1">
-                        <p>
-                            Este é Kyrag, um homem que perdeu sua esposa e filho em um trágico acidente.
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    Este é Kyrag, um homem que perdeu sua esposa e filho em um trágico acidente.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="scene-single scene-2">
-                        <p>
-                            Ao ouvir rumores de que o Guardião da Morte teria a
-                            capacidade de trazer de volta à vida aqueles que partiram, ele ficou louco e foi à procura do lugar onde o Guardião da Morte havia sido selado.
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    Ao ouvir rumores de que o Guardião da Morte teria a
+                                    capacidade de trazer de volta à vida aqueles que partiram, ele ficou louco e foi à procura do lugar onde o Guardião da Morte havia sido selado.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="scene-single scene-3">
-                        <p>
-                            Porém, o preço pago para quebrar o selo do Guardião da Morte é alto, e pessoas de todo o mundo
-                            serão prejudicadas para que o contrafeitiço seja
-                            feito.
-                        </p>
-                        <p>
-                            Além disso, romper o selo do Guardião, que está enfeitiçado e pronto
-                            para destruir tudo, significará o fim dos tempos.
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    Porém, o preço pago para quebrar o selo do Guardião da Morte é alto, e pessoas de todo o mundo
+                                    serão prejudicadas para que o contrafeitiço seja
+                                    feito.
+                                </p>
+                                <p class="b">
+                                    Além disso, romper o selo do Guardião, que está enfeitiçado e pronto
+                                    para destruir tudo, significará o fim dos tempos.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="plot-divisory plot-6">
                     <div class="scene-single scene-1">
-                        <p>
-                            Para impedir que o selo de Eigengrau seja quebrado e o equilíbrio entre a vida e a morte seja mantido, Agna pede sua ajuda.
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    Para impedir que o selo de Eigengrau seja quebrado e o equilíbrio entre a vida e a morte seja mantido, Agna pede sua ajuda.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="scene-single scene-2">
-                        <p>
-                            Cabe a você impedir que o Equilíbrio da Vida e da Morte se quebre.
-                        </p>
+                        <div class="scene-single-content">
+                            <div class="scene-single-content-inner">
+                                <p class="a">
+                                    Cabe a você impedir que o Equilíbrio da Vida e da Morte se quebre.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </article>
+
+            <div class="divisory"></div>
 
             <?php
                 if( have_rows('topico') ){

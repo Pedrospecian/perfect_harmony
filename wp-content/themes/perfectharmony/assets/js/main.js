@@ -55,6 +55,85 @@ $(document).ready(function(){
     //}
 
     if($('.main-home').length ){
+
+        $(function () { // wait for document ready
+            // init
+            var controller = new ScrollMagic.Controller();
+
+            // define movement of panels
+            var wipeAnimation = new TimelineMax()
+                .fromTo(".plot .plot-1 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-1 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-1 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-1", 1, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-1 .scene-2", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-1 .scene-2 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-2 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-2 .c", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-2 .d", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-2 .e", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-2", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-1 .scene-3", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-1 .scene-3 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-3", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-2 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-2 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-2 .scene-1", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-2 .scene-2", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-2 .scene-2 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-2 .scene-2 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-2 .scene-2", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-3 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-3 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-3 .scene-1 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-3 .scene-1", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-3 .scene-2", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-3 .scene-2 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-3 .scene-2", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-4 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-4 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-4 .scene-1", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-5 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-5 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-5 .scene-1", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-5 .scene-2", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-5 .scene-2 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-5 .scene-2", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-5 .scene-3", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-5 .scene-3 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-5 .scene-3 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-5 .scene-3", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-6 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-6 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-6 .scene-1", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+                .fromTo(".plot .plot-6 .scene-2", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-6 .scene-2 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-6 .scene-2", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+
+            // create scene to pin and link animation
+            new ScrollMagic.Scene({
+                    triggerElement: ".plot",
+                    triggerHook: "onLeave",
+                    duration: "800%"
+                })
+                .setPin(".plot")
+                .setTween(wipeAnimation)
+                .addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        });
+
         var aaaaaa=$("footer").height() + $(".main-home .section-home-6").height();
         var controller1 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
         var controller2 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: aaaaaa+'px'}});
@@ -96,6 +175,11 @@ $(document).ready(function(){
                         .setTween(".main-home .section-home-6 .bg", {y: "50%", ease: Linear.easeNone})
                         .addIndicators()
                         .addTo(controller2);
+
+        /*var controllerPlot = new ScrollMagic.Controller();
+
+        new ScrollMagic.Scene({triggerElement: ".plot .plot-1 .scene-2 .scene-single-content", duration: '100%'})
+                        .setPin(".plot .plot-1 .scene-1 .scene-single-content").addIndicators().addTo(controllerPlot);*/
 
         /*var scene = new ScrollMagic.Scene({triggerElement: ".main-home .section-home-3"})
                         // trigger a velocity opaticy animation

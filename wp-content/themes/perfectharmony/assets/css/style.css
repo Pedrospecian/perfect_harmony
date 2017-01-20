@@ -55,6 +55,28 @@ Use it to make something cool, have fun, and share what you've learned with othe
   font-weight: normal;
   font-style: normal;
 }
+@-webkit-keyframes plot_text {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 10px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+@keyframes plot_text {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 10px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
 @-webkit-keyframes arrow_dev {
   0% {
     top: -72px;
@@ -281,19 +303,45 @@ header .header-menu li {
 .screen-reader-text {
   display: none;
 }
-.plot .plot-divisory {
-  position: relative;
+.plot {
+  overflow: hidden;
   width: 100%;
   height: 100vh;
-}
-.plot .scene-single {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
   background-color: black;
+}
+.plot .plot-divisory .scene-single {
+  position: absolute;
+  height: 100%;
+  width: 200%;
+  background-color: black;
+}
+.plot .plot-divisory .scene-single .scene-single-content {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  /*p {
+                    display: block;
+                    position: static;
+                }*/
+}
+.plot .plot-divisory .scene-single .scene-single-content .scene-single-content-inner {
+  position: absolute;
+  left: 5%;
+  width: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   color: white;
+  -webkit-animation: plot_text 5s infinite;
+          animation: plot_text 5s infinite;
+}
+.plot .plot-divisory.plot-4 .scene-single .scene-single-content .scene-single-content-inner {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  -webkit-animation: none;
+          animation: none;
 }
 .section {
   background-color: #356;

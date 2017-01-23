@@ -4,8 +4,8 @@
                 <div class="container">
                     <p>Acompanhe as novidades nas redes sociais</p>
                     <ul class='social-networks'>
-                        <li><a class="social social-facebook" href="#" title="Facebook"></a></li>
-                        <li><a class="social social-twitter" href="#" title="Twitter"></a></li>
+                        <li><a class="social social-facebook" href="#" title="Facebook" target="_blank"></a></li>
+                        <li><a class="social social-twitter" href="#" title="Twitter" target="_blank"></a></li>
                     </ul>
                 </div>
             </div>

@@ -26,7 +26,7 @@ get_header(); ?>
                 <img src="" alt="Perfect Harmony" class="logo">
                 <div class="goto-bottom">
                     <div class="goto-bottom-content">
-                        <span class="seethehistory">Desça e Veja a História</span>
+                        <span class="seethehistory">Desça e <br> veja a história</span>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow-plot.png" class="arrow-plot">
                     </div>
                 </div>

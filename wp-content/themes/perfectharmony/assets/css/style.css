@@ -486,6 +486,7 @@ header .header-menu li {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.section .content-figures .content-figure-single,
 .section .content-figures .sliderdev-figure {
   width: 100%;
 }

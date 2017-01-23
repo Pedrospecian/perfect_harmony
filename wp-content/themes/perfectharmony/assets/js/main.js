@@ -88,71 +88,71 @@ $(document).ready(function(){
 
             // define movement of panels
             var wipeAnimation = new TimelineMax()
-                .fromTo(".plot .plot-1 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
-                .fromTo(".plot .plot-1 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-1 .scene-1 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-1 .scene-1", 1, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-1 .scene-1", 10, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-1 .scene-1 .a", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-1 .b", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-1", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-1 .scene-2", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
-                .fromTo(".plot .plot-1 .scene-2 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-1 .scene-2 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-1 .scene-2 .c", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-1 .scene-2 .d", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-1 .scene-2 .e", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-1 .scene-2", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-1 .scene-2", 10, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-1 .scene-2 .a", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-2 .b", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-2 .c", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-2 .d", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-2 .e", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-2", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-1 .scene-3", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
-                .fromTo(".plot .plot-1 .scene-3 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-1 .scene-3", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-1 .scene-3", 10, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-1 .scene-3 .b", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-1 .scene-3", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-2 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
-                .fromTo(".plot .plot-2 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-2 .scene-1", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-2 .scene-1", 10, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-2 .scene-1 .a", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-2 .scene-1", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-2 .scene-2", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
-                .fromTo(".plot .plot-2 .scene-2 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-2 .scene-2 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-2 .scene-2", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-2 .scene-2", 10, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-2 .scene-2 .a", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-2 .scene-2 .b", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-2 .scene-2", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-3 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
-                .fromTo(".plot .plot-3 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-3 .scene-1 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-3 .scene-1", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-3 .scene-1", 10, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-3 .scene-1 .a", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-3 .scene-1 .b", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-3 .scene-1", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-3 .scene-2", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
-                .fromTo(".plot .plot-3 .scene-2 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-3 .scene-2", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-3 .scene-2", 10, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-3 .scene-2 .a", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-3 .scene-2", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-4 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
-                .fromTo(".plot .plot-4 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-4 .scene-1", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-4 .scene-1", 10, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-4 .scene-1 .a", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-4 .scene-1", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-5 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
-                .fromTo(".plot .plot-5 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-5 .scene-1", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-5 .scene-1", 10, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-5 .scene-1 .a", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-5 .scene-1", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-5 .scene-2", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-5 .scene-2", 10, {x: "100%"}, {x: "0%", delay: 4})  // in from right
                 .fromTo(".plot .plot-5 .scene-2 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-5 .scene-2", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-5 .scene-2", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-5 .scene-3", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
-                .fromTo(".plot .plot-5 .scene-3 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-5 .scene-3 .b", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-5 .scene-3", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-5 .scene-3", 10, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-5 .scene-3 .a", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-5 .scene-3 .b", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-5 .scene-3", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-6 .scene-1", 1, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
-                .fromTo(".plot .plot-6 .scene-1 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-6 .scene-1", 2, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-6 .scene-1", 10, {x: "100%", opacity: 0}, {x: "0%", opacity: 1, delay: 4})  // in from right
+                .fromTo(".plot .plot-6 .scene-1 .a", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-6 .scene-1", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
-                .fromTo(".plot .plot-6 .scene-2", 1, {x: "100%"}, {x: "0%", delay: 4})  // in from right
-                .fromTo(".plot .plot-6 .scene-2 .a", 1, {opacity: "0"}, {opacity: "1", delay: 4})
-                .fromTo(".plot .plot-6 .scene-2", 5, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
+                .fromTo(".plot .plot-6 .scene-2", 10, {x: "100%"}, {x: "0%", delay: 4})  // in from right
+                .fromTo(".plot .plot-6 .scene-2 .a", 2, {opacity: "0"}, {opacity: "1", delay: 4})
+                .fromTo(".plot .plot-6 .scene-2", 10, {opacity: 1}, {opacity: 0, delay: 4})  // SAI
 
             // create scene to pin and link animation
             new ScrollMagic.Scene({
                     triggerElement: ".plot",
                     triggerHook: "onLeave",
-                    duration: "800%"
+                    duration: "900%"
                 })
                 .setPin(".plot")
                 .setTween(wipeAnimation)
@@ -169,28 +169,49 @@ $(document).ready(function(){
 
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-1"})
                         .setTween(".main-home .section-home-1 .bg", {y: "70%", ease: Linear.easeNone})
-                        .addIndicators()
                         .addTo(controller1);
 
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-1"})
                         .setTween(".main-home .section-home-1 #particles-js-1", {y: "-20%", ease: Linear.easeNone})
-                        .addIndicators()
                         .addTo(controller1);
 
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-3"})
                         .setTween(".main-home .section-home-3 .bg", {y: "50%", ease: Linear.easeNone})
-                        .addIndicators()
                         .addTo(controller3);
 
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-2"})
                         .setTween(".main-home .section-home-2 .bg", {y: "80%", ease: Linear.easeNone})
-                        .addIndicators()
                         .addTo(controller1);
 
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-4"})
                         .setTween(".main-home .section-home-4 .bg", {x: "50%", ease: Linear.easeNone})
-                        .addIndicators()
                         .addTo(controller1);
+
+        var controllerContentText = new ScrollMagic.Controller();
+
+        var c2 = new TimelineMax()
+                .fromTo(".main-home .section-home-2 .content-text", 1, {x: "50%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+                .fromTo(".main-home .section-home-2 .content-figures", 1, {x: "-50%"}, {x: "0%", ease: Linear.easeNone})
+
+        var c3 = new TimelineMax()
+                .fromTo(".main-home .section-home-3 .content-text", 1, {x: "-50%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+                .fromTo(".main-home .section-home-3 .content-figures", 1, {x: "50%"}, {x: "0%", ease: Linear.easeNone})
+
+        var c4 = new TimelineMax()
+                .fromTo(".main-home .section-home-4 .content-text", 1, {x: "50%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+                .fromTo(".main-home .section-home-4 .content-figures", 1, {x: "-50%"}, {x: "0%", ease: Linear.easeNone})
+
+        new ScrollMagic.Scene({triggerElement: ".main-home .section-home-2", duration: 200})
+                        .setTween(c2)
+                        .addTo(controllerContentText);
+
+        new ScrollMagic.Scene({triggerElement: ".main-home .section-home-3", duration: 200})
+                        .setTween(c3)
+                        .addTo(controllerContentText);
+
+        new ScrollMagic.Scene({triggerElement: ".main-home .section-home-4", duration: 200})
+                        .setTween(c4)
+                        .addTo(controllerContentText);
 
         /*new ScrollMagic.Scene({triggerElement: ".main-home .section-home-5"})
                         .setTween(".main-home .section-home-5 .bg", {y: "-30%", ease: Linear.easeNone})
@@ -199,7 +220,6 @@ $(document).ready(function(){
 
         new ScrollMagic.Scene({triggerElement: ".main-home .section-home-6"})
                         .setTween(".main-home .section-home-6 .bg", {y: "50%", ease: Linear.easeNone})
-                        .addIndicators()
                         .addTo(controller2);
 
         /*var controllerPlot = new ScrollMagic.Controller();
@@ -235,7 +255,7 @@ $(document).ready(function(){
 
         var pin = new ScrollMagic.Scene({
                 triggerElement: '.main-home .section-home-2 .content-text'
-            }).setTween(tl).addIndicators().addTo(controllerCharacters);
+            }).setTween(tl).addTo(controllerCharacters);
 
         /*var pin = new ScrollMagic.Scene({
                 triggerElement: '.main-home .section-home-3 .content-text'

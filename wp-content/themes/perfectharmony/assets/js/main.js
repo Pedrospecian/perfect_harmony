@@ -15,6 +15,13 @@ $(document).ready(function(){
         $('header').toggleClass('slidedown');
     });
 
+    $('.goto-bottom .goto-bottom-content').on('click', function(){
+        /*window.scrollTop($('.plot .plot-1'), 500);*/
+        $('html, body').animate({
+            scrollTop: $(".plot .plot-1 .scene-1 .scene-single-content .scene-single-content-inner").offset().top-20
+        }, 2000);
+    });
+
     var current=$('.slider-dev-master .slide-development-single.current').attr('master');
     //var currentArrow=(current)*($('input[name="gambiarra"]').val()*0.9925);
     var currentArrow=($('.current').offset().left)-window.innerWidth*($('input[name="gambiarra"]').val()/100);
@@ -55,6 +62,25 @@ $(document).ready(function(){
     //}
 
     if($('.main-home').length ){
+
+        $(function () { // wait for document ready
+        // build scene
+            var controller = new ScrollMagic.Controller();
+            var scene = new ScrollMagic.Scene({triggerElement: "body", triggerHook: 0, duration: '300%'})
+                            .setPin(".goto-bottom")
+                            .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+                            .addTo(controller);
+
+            var x = new TimelineMax()
+                .fromTo('.goto-bottom', 0.4, {opacity: 1}, {opacity: 0})
+                .fromTo('.goto-bottom', 0, {display: 'block'}, {display: 'none'})
+
+            var scene2 = new ScrollMagic.Scene({triggerElement: ".plot .plot-1 .scene-single-content"})
+                    // trigger a velocity opaticy animation
+                    .setTween(x)
+                    .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller);
+        });
 
         $(function () { // wait for document ready
             // init

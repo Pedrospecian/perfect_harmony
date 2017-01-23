@@ -24,7 +24,12 @@ get_header(); ?>
                 <div class="bg"></div>
                 <div id="particles-js-1"></div>
                 <img src="" alt="Perfect Harmony" class="logo">
-                <div class="goto-bottom">Veja a História</div>
+                <div class="goto-bottom">
+                    <div class="goto-bottom-content">
+                        <span class="seethehistory">Desça e Veja a História</span>
+                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow-plot.png" class="arrow-plot">
+                    </div>
+                </div>
             </section>
 
             <div class="divisory"></div>
@@ -33,6 +38,11 @@ get_header(); ?>
                 <section class="plot-divisory plot-1">
                     <div class="scene-single scene-1">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     O universo se mantém de pé graças à harmonia entre os opostos.
@@ -45,6 +55,20 @@ get_header(); ?>
                     </div>
                     <div class="scene-single scene-2">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-2">
+                                </div>
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-3">
+                                </div>
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-4">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     A Balança do Tempo e do Espaço.
@@ -66,6 +90,14 @@ get_header(); ?>
                     </div>
                     <div class="scene-single scene-3">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     Para guardar as Quatro Balanças, o Criador fez oito entidades para cuidar de cada prato de cada balança. Essas oito entidades são chamadas Guardiões.
@@ -80,6 +112,11 @@ get_header(); ?>
                 <section class="plot-divisory plot-2">
                     <div class="scene-single scene-1">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     O trabalho de cada Guardião é zelar para que seu prato esteja sempre em equilíbrio em relação ao prato oposto. Logo, Agna é a responsável por manter a vida e Eigengrau é o responsável por assegurar que haverá um fim a cada vida feita por Agna.
@@ -89,6 +126,11 @@ get_header(); ?>
                     </div>
                     <div class="scene-single scene-2">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     Ambos os Guardiões sempre foram extremamente dedicados para com sua tarefa.
@@ -103,6 +145,11 @@ get_header(); ?>
                 <section class="plot-divisory plot-3">
                     <div class="scene-single scene-1">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     Há 400 anos, uma bruxa poderosa tentou controlar o Guardião da Morte com um feitiço poderoso para que se tornasse mais poderosa que os próprios Guardiões.
@@ -115,6 +162,11 @@ get_header(); ?>
                     </div>
                     <div class="scene-single scene-2">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     O Guardião da Morte ainda estava enfeitiçado e, graças ao feitiço, se tornou violento. Por isso, os Guardiões tiveram que selar ele e a Guardiã da Vida para garantir que Eigengrau fosse temporariamente pacificado e ao mesmo tempo o equilíbrio entre a vida e a morte fosse mantido.
@@ -137,6 +189,11 @@ get_header(); ?>
                 <section class="plot-divisory plot-5">
                     <div class="scene-single scene-1">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     Este é Kyrag, um homem que perdeu sua esposa e filho em um trágico acidente.
@@ -146,6 +203,11 @@ get_header(); ?>
                     </div>
                     <div class="scene-single scene-2">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     Ao ouvir rumores de que o Guardião da Morte teria a
@@ -156,6 +218,11 @@ get_header(); ?>
                     </div>
                     <div class="scene-single scene-3">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     Porém, o preço pago para quebrar o selo do Guardião da Morte é alto, e pessoas de todo o mundo
@@ -173,6 +240,11 @@ get_header(); ?>
                 <section class="plot-divisory plot-6">
                     <div class="scene-single scene-1">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     Para impedir que o selo de Eigengrau seja quebrado e o equilíbrio entre a vida e a morte seja mantido, Agna pede sua ajuda.
@@ -182,6 +254,11 @@ get_header(); ?>
                     </div>
                     <div class="scene-single scene-2">
                         <div class="scene-single-content">
+                            <div class="scene-single-content-figure">
+                                <div class="scene-single-content-figure-wrapper">
+                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/sandwich-2b.png" alt="" class="image image-big image-1">
+                                </div>
+                            </div>
                             <div class="scene-single-content-inner">
                                 <p class="a">
                                     Cabe a você impedir que o Equilíbrio da Vida e da Morte se quebre.

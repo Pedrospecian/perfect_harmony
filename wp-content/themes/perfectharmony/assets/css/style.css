@@ -117,6 +117,68 @@ Use it to make something cool, have fun, and share what you've learned with othe
     top: -72px;
   }
 }
+@-webkit-keyframes arrow_plot {
+  0% {
+    top: 4px;
+  }
+  15% {
+    top: -2px;
+  }
+  30% {
+    top: 4px;
+  }
+  45% {
+    top: -2px;
+  }
+  60% {
+    top: 4px;
+  }
+  100% {
+    top: 4px;
+  }
+}
+@keyframes arrow_plot {
+  0% {
+    top: 4px;
+  }
+  15% {
+    top: -2px;
+  }
+  30% {
+    top: 4px;
+  }
+  45% {
+    top: -2px;
+  }
+  60% {
+    top: 4px;
+  }
+  100% {
+    top: 4px;
+  }
+}
+@-webkit-keyframes plot_goto_bottom {
+  0% {
+    bottom: 20%;
+  }
+  50% {
+    bottom: 21%;
+  }
+  100% {
+    bottom: 20%;
+  }
+}
+@keyframes plot_goto_bottom {
+  0% {
+    bottom: 20%;
+  }
+  50% {
+    bottom: 21%;
+  }
+  100% {
+    bottom: 20%;
+  }
+}
 @-webkit-keyframes imagem_dev {
   0% {
     margin-top: 0px;
@@ -314,6 +376,7 @@ header .header-menu li {
   height: 100%;
   width: 200%;
   background-color: black;
+  background-image: url(../images/sandwich-2.jpg);
 }
 .plot .plot-divisory .scene-single .scene-single-content {
   position: relative;
@@ -334,6 +397,38 @@ header .header-menu li {
   color: white;
   -webkit-animation: plot_text 5s infinite;
           animation: plot_text 5s infinite;
+}
+.plot .plot-divisory .scene-single .scene-single-content .scene-single-content-figure {
+  position: absolute;
+  right: 5%;
+  width: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+  -webkit-animation: plot_text 3s infinite;
+          animation: plot_text 3s infinite;
+}
+.plot .plot-divisory .scene-single .scene-single-content .scene-single-content-figure .scene-single-content-figure-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.plot .plot-divisory .scene-single .scene-single-content .scene-single-content-figure .scene-single-content-figure-wrapper .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+.plot .plot-divisory .scene-single .scene-single-content .scene-single-content-figure .scene-single-content-figure-wrapper .image.image-small {
+  width: 35%;
+}
+.plot .plot-divisory .scene-single .scene-single-content .scene-single-content-figure .scene-single-content-figure-wrapper .image.image-medium {
+  width: 55%;
+}
+.plot .plot-divisory .scene-single .scene-single-content .scene-single-content-figure .scene-single-content-figure-wrapper .image.image-big {
+  width: 85%;
 }
 .plot .plot-divisory.plot-4 .scene-single .scene-single-content .scene-single-content-inner {
   left: 50%;
@@ -398,10 +493,77 @@ header .header-menu li {
   padding-top: 40px;
   width: 80%;
 }
+.section.section-home-1 {
+  position: relative;
+}
 .section.section-home-1 .bg {
   background-image: url(../images/generic_bg.jpg);
   -webkit-animation: homebg 8s linear infinite;
           animation: homebg 8s linear infinite;
+}
+.section.section-home-1 .logo {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 25%;
+  display: block;
+}
+.section.section-home-1 .goto-bottom {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20%;
+  text-align: center;
+  -webkit-animation: plot_goto_bottom 4s linear infinite;
+          animation: plot_goto_bottom 4s linear infinite;
+  z-index: 15;
+}
+.section.section-home-1 .goto-bottom .arrow-plot {
+  display: block;
+  width: 75px;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-animation: arrow_plot 2s linear infinite;
+          animation: arrow_plot 2s linear infinite;
+}
+.section.section-home-1 .goto-bottom .goto-bottom-content {
+  position: relative;
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.section.section-home-1 .goto-bottom .goto-bottom-content::before {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  content: "";
+  border: solid 2px white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+}
+.section.section-home-1 .goto-bottom .goto-bottom-content:hover::before {
+  width: 150px;
+  height: 150px;
+  -webkit-box-shadow: inset 0px 0px 30px 0px white;
+          box-shadow: inset 0px 0px 30px 0px white;
+  opacity: 0.3;
+}
+.section.section-home-1 .goto-bottom .goto-bottom-content:hover {
+  opacity: 1;
 }
 .section.section-home-2 .bg {
   background-image: url(../images/.jpg);
